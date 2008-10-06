@@ -4,7 +4,7 @@ require 'lib/robbie'
 
 Hoe.new('robbie', Robbie::VERSION) do |p|
   p.author = 'Gastón Ramos'
-  p.email = 'tech@engineyard.com'
+  p.email = 'ramos.gaston@gmail.com'
   p.summary = 'Capistrano tasks for my apps'
   p.description = 'A bunch of useful recipes to help deployment'
   p.url = 'http://github.com/engineyard/eycap/tree/master'
