@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = true
   s.homepage = %q{}
   s.rdoc_options = ["--main", "README.txt"]
-  s.require_paths = ["lib"]
+  # s.require_paths = ["lib"]
   s.rubyforge_project = %q{eycap}
   s.rubygems_version = %q{1.2.0}
   s.summary = %q{Capistrano tasks}
