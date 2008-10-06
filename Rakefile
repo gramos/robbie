@@ -7,7 +7,7 @@ Hoe.new('robbie', Robbie::VERSION) do |p|
   p.email = 'ramos.gaston@gmail.com'
   p.summary = 'Capistrano tasks for my apps'
   p.description = 'A bunch of useful recipes to help deployment'
-  p.url = 'http://github.com/engineyard/eycap/tree/master'
+  p.url = 'http://github.com/gramos/robbie/tree/master'
   p.changes = p.paragraphs_of('History.txt', 0..1).join("\n\n")
   p.extra_deps << ['capistrano', '>= 2.2.0']
 end
