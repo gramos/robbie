@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
   s.description = %q{A bunch of useful recipes (based on eycap) to help deployment}
   s.email = %q{ramos.gaston@gmail.com}
   # s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
-  candidates = Dir.glob("{lib}/**/*")
+  candidates =  ["lib/robbie", "lib/robbie/lib", "lib/robbie/lib/ey_logger.rb", "lib/robbie/lib/ey_logger_hooks.rb", "lib/robbie/recipes", "lib/robbie/recipes/backgroundrb.rb", "lib/robbie/recipes/database.rb", "lib/robbie/recipes/deploy.rb", "lib/robbie/recipes/ferret.rb", "lib/robbie/recipes/juggernaut.rb", "lib/robbie/recipes/memcached.rb", "lib/robbie/recipes/mongrel.rb", "lib/robbie/recipes/monit.rb", "lib/robbie/recipes/nginx.rb", "lib/robbie/recipes/slice.rb", "lib/robbie/recipes/solr.rb", "lib/robbie/recipes/sphinx.rb", "lib/robbie/recipes/templates", "lib/robbie/recipes/templates/maintenance.rhtml", "lib/robbie/recipes/tomcat.rb", "lib/robbie/recipes/shooting_star.rb", "lib/robbie/recipes/assets.rb", "lib/robbie/recipes.rb", "lib/robbie/version.rb", "lib/robbie.rb"]
+  # Dir.glob("{lib}/**/*")
   candidates << "README.txt"
   s.files = candidates.delete_if do |item|
     item.include?("~") || item.include?("git")
@@ -24,5 +25,4 @@ Gem::Specification.new do |s|
   s.summary = %q{Capistrano tasks}
 
   s.add_dependency(%q<capistrano>, [">= 2.2.0"])
-  # s.add_dependency(%q<hoe>, [">= 1.5.1"])
 end
