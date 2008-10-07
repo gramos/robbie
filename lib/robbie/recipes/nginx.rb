@@ -69,7 +69,7 @@ Capistrano::Configuration.instance(:must_exist).load do
         root #{deploy_to}/current/public;
         index  index.html index.htm;
 
-        access_log  /var/log/nginx/localhost.access.log;
+        access_log  /var/log/nginx/#{application}.access.log;
 
         location / {
            index index.html index.htm;

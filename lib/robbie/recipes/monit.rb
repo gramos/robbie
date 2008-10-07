@@ -16,9 +16,6 @@ Capistrano::Configuration.instance(:must_exist).load do
       end
     end
 
-
-
-
   desc "reload monit server"
   task :reload do
     run "sudo /etc/init.d/monit force-reload"

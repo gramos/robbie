@@ -23,11 +23,7 @@ task :netstat, :roles => :app do
   end
 end
 
-desc 'Pone los permisos necesarios para la carpeta de la app'
-task :set_perms, :roles => :app do
-  sudo "chown -R #{user}:#{mongrel_group} #{deploy_to}/"
-  sudo "chmod 774 -R #{deploy_to}"
-end
+
 
 ###############################################################################
 # SETUP SSH
