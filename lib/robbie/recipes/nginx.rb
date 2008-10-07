@@ -21,7 +21,7 @@ Capistrano::Configuration.instance(:must_exist).load do
 
     desc "Tail the nginx access logs for this application"
     task :tail, :roles => :app do
-      run "tail -f /var/log/engineyard/nginx/#{application}.access.log" do |channel, stream, data|
+      run "tail -f /var/log/nginx/#{application}.access.log" do |channel, stream, data|
         puts "#{channel[:server]}: #{data}" unless data =~ /^10\.[01]\.0/ # skips lb pull pages
         break if stream == :err
       end
@@ -29,7 +29,7 @@ Capistrano::Configuration.instance(:must_exist).load do
 
     desc "Tail the nginx error logs on the app slices"
     task :tail_error, :roles => :app do
-      run "tail -f /var/log/engineyard/nginx/error.log" do |channel, stream, data|
+      run "tail -f /var/log/nginx/error.log" do |channel, stream, data|
         puts "#{channel[:server]}: #{data}" unless data =~ /^10\.[01]\.0/ # skips lb pull pages
         break if stream == :err
       end
