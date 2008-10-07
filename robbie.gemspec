@@ -11,12 +11,13 @@ Gem::Specification.new do |s|
   s.email = %q{ramos.gaston@gmail.com}
   # s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
   candidates = Dir.glob("{lib}/**/*")
+  candidates << "README.txt"
   s.files = candidates.delete_if do |item|
     item.include?("~") || item.include?("git")
   end
   s.has_rdoc = true
   s.homepage = %q{}
-  s.rdoc_options = ["--main", "README.txt"]
+  # s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{eycap}
   s.rubygems_version = %q{1.2.0}
