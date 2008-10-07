@@ -1,6 +1,8 @@
 require 'robbie/lib/ey_logger'
 require 'robbie/lib/ey_logger_hooks'
 require 'robbie/recipes/database'
+require 'robbie/recipes/assets'
+require 'robbie/recipes/shooting_star'
 require 'robbie/recipes/ferret'
 require 'robbie/recipes/mongrel'
 require 'robbie/recipes/nginx'
