@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gastón Ramos"]
   s.date = %q{2008-10-06}
-  s.description = %q{A bunch of useful recipes to help deployment}
+  s.description = %q{A bunch of useful recipes (based on eycap) to help deployment}
   s.email = %q{ramos.gaston@gmail.com}
   # s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt"]
   candidates = Dir.glob("{lib}/**/*")
