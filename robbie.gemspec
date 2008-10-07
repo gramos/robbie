@@ -19,10 +19,10 @@ Gem::Specification.new do |s|
   s.homepage = %q{}
   # s.rdoc_options = ["--main", "README.txt"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{eycap}
+  s.rubyforge_project = %q{robbie}
   s.rubygems_version = %q{1.2.0}
   s.summary = %q{Capistrano tasks}
 
   s.add_dependency(%q<capistrano>, [">= 2.2.0"])
-  s.add_dependency(%q<hoe>, [">= 1.5.1"])
+  # s.add_dependency(%q<hoe>, [">= 1.5.1"])
 end
