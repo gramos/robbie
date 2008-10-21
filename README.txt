@@ -8,6 +8,5 @@ gem install gramos-robbie
 
 then should be inlude into deploy.rb
 
-
 require 'robbie/recipes'
 
